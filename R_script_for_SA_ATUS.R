@@ -22,8 +22,9 @@ pacman::p_load(TraMineR, TraMineRextras, downloader, cluster, RColorBrewer, devt
 #' zip_to_df("https://www.bls.gov/tus/special.requests/atusact-0320.zip")
 #' zip_to_df("https://www.bls.gov/tus/special.requests/atusrostec-1120.zip")
 zip_to_df<-function(url) {
-  download(url, destfile="data")
-  data <- read.table(unzip(data, files=paste(str_replace(str_split(tail(str_split(url, "/")[[1]], 1), "\\.")[[1]][1], "-", "_"), ".dat", sep="")), header = T, sep = ",", colClasses = "character")
+  d <- "data"
+  download(url, destfile=d)
+  data <- read.table(unzip(d, files=paste(str_replace(str_split(tail(str_split(url, "/")[[1]], 1), "\\.")[[1]][1], "-", "_"), ".dat", sep="")), header = T, sep = ",", colClasses = "character")
   return(data)
 }
 
