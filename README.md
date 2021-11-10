@@ -12,7 +12,7 @@ ATUS).
 
 To follow this tutotial:
 
--   change the directory to the location of the cloned directory
+-   change the directory to the location of cloned directory
 -   follow instructions in the code (R file is included)
 
 Funding: This project has received funding from the European Union’s
@@ -22,8 +22,8 @@ Kolpashnikova).
 
 ## Example of Work Using Sequence Analysis
 
-I published a paper using sequence analysis in the Journal of Population
-Ageing:
+Here is an example how a published paper using sequence analysis looks
+like (my recent research in the Journal of Population Ageing):
 
 Kolpashnikova, K., & Kan, M. Y. (2020). [Eldercare in Japan: Cluster
 Analysis of daily time-use patterns of elder
@@ -614,7 +614,7 @@ om_time <- seqdist(time15_seq, method = "OM", indel = 1, sm = scost)
 
     ##  [>] computing distances using the OM metric
 
-    ##  [>] elapsed time: 27.877 secs
+    ##  [>] elapsed time: 28.65 secs
 
 ``` r
 ## this results in a dissimilarity matrix which you can look at using:
