@@ -394,21 +394,18 @@ ward.tree <- as.seqtree(clusterward, seqdata = time15_seq,
 seqtreedisplay(ward.tree, type = "d", border = NA, show.depth = TRUE) 
 ```
 
-Test the cluster solution quality:
+There are many possible tests for the cluster solution quality:
 
-There are many possible tests:
-
-- PBC. Point Biserial Correlation. Correlation between the given distance matrice and a distance which equal to zero for individuals in the same cluster and one otherwise.
-- HG. Hubert's Gamma. Same as previous but using Kendall's Gamma coefficient.
-- HGSD. Hubert's Gamma (Somers'D). Same as previous but using Somers' D coefficient.
-- ASW. Average Silhouette width (observation).
-- ASWw. Average Silhouette width (weighted).
-- CH. Calinski-Harabasz index (Pseudo F statistics computed from distances).
-- R2. Share of the discrepancy explained by the clustering solution.
-- CHsq. Calinski-Harabasz index (Pseudo F statistics computed from squared distances).
-- R2sq. Share of the discrepancy explained by the clustering solution (computed using squared distances).
-- HC. Hubert's C coefficient.
-- ASW. The Average Silhouette Width of each cluster, one column for each ASW measure.
+* Point Biserial Correlation (PBC). 
+* Hubert’s Gamma (HG).
+* Hubert’s Gamma (Somers’D) (HGSD). 
+* Average Silhouette Width (ASW).
+* Average Silhouette Width (weighted) (ASWw).
+* Calinski-Harabasz index (CH).
+* R2.
+* Calinski-Harabasz Index squared (CHsq).
+* R2sq. 
+* Hubert’s C coefficient (HC).
 
 ```{r}
 
